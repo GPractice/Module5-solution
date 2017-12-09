@@ -86,7 +86,7 @@ $ajaxUtils.sendGetRequest(
 // [...], // ***** <---- TODO: STEP 1: Substitute [...] ******
   buildAndShowHomeHTML,
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
-});
+ });
 // *** finish **
 
 
@@ -116,7 +116,7 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      chosenCategoryShortName = "'"+chosenCategoryShortName+"'";
+      chosenCategoryShortName = "'" + chosenCategoryShortName + "'";
        var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName",
                 chosenCategoryShortName);
 
