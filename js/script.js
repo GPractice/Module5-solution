@@ -247,6 +247,10 @@ function buildMenuItemsViewHtml(categoryMenuItems,
                                 menuItemHtml) {
 console.log(categoryMenuItems);
   
+  if (categoryMenuItems.category.name == null) {
+    categoryMenuItems.category.name = chooseRandomCategory(categories);
+  };
+  
   menuItemsTitleHtml =
     insertProperty(menuItemsTitleHtml,
                    "name",
