@@ -247,8 +247,10 @@ function buildMenuItemsViewHtml(categoryMenuItems,
                                 menuItemHtml) {
 console.log(categoryMenuItems);
   
-  if (categoryMenuItems.category.name == null) {
+  if (categoryMenuItems.length === 0) {
+    buildAndShowHomeHTML;
     categoryMenuItems.category.name = chooseRandomCategory(categories);
+    console.log(categoryMenuItems.category.name);
   };
   
   menuItemsTitleHtml =
